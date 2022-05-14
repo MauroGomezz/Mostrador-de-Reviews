@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: teal;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80vw;
+  max-width: 620px;
+  text-align: center;
+}
+
+.tittle {
+  margin-bottom: 3rem;
+  font-size: 30px;
+  position: relative;
+  max-width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  padding: 5px 5px 10px 10px;
+}
+
+.tittle::before {
+  content: "";
+  position: absolute;
+  height: 64px;
+  width: 50%;
+  left: 1px;
+  border-left: 5px solid rgb(43, 168, 226);
+  border-top: 5px solid rgb(43, 168, 226);
+  border-radius: 2px;
+}
+
+.tittle::after {
+  content: "";
+  position: absolute;
+  min-width: 50%;
+  top: 1px;
+  bottom: -1px;
+  border-radius: 2px;
+  border-bottom: 5px solid rgb(43, 168, 226);
+  border-right: 5px solid rgb(43, 168, 226);
+}
+
+article {
+  background-color: rgb(43, 168, 226);
+  padding: 1rem 2rem;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+img {
+  border-radius: 50%;
+  border-right: 8px outset rgb(43, 168, 226);
+  border-top: 8px inset rgb(43, 168, 226);
+  object-fit: cover;
+  margin-bottom: .5rem;
+  width: 150px;
+  height: 150px;
+}
+
+#name {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+#profecion {
+  color: rgb(26, 88, 117);
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+#review {
+  margin-bottom: .5rem;
+}
+
+.btn {
+  color: rgb(26, 88, 117);
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  margin: 0 .5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  color: rgba(26, 88, 117, .6);
+}
+
+#random {
+  margin-top: .5rem;
+  padding: 0.2rem .5rem;
+  border: 3px outset rgb(26, 88, 117);
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+#random:hover {
+  background: rgba(26, 88, 117, .7);
+}
+
+#random:active {
+  border: 3px inset rgb(26, 88, 117);
+}
